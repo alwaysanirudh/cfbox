@@ -3,6 +3,7 @@ package jm_logic;
 public class Response {
     Integer plan_id;
     String product_id;
+    Integer step_num;
     Boolean proceed;
     Integer consumerId;
     Boolean claimed;
@@ -24,6 +25,13 @@ public class Response {
         this.product_id = product_id;
     }
 
+    public Integer getStep_num() {
+        return step_num;
+    }
+
+    public void setStep_num(Integer step_num) {
+        this.step_num = step_num;
+    }
     public Boolean getProceed() {
         return proceed;
     }
@@ -54,9 +62,10 @@ public class Response {
     public void setData(Data data) {
         this.data = data;
     }
-    public Response(Integer plan_id, String product_id, Boolean proceed, Data data) {
+    public Response(Integer plan_id, String product_id, Integer step_num,Boolean proceed, Data data) {
         this.plan_id = plan_id;
         this.product_id = product_id;
+        this.step_num = step_num;
         this.proceed = proceed;
         this.data = data;
     }

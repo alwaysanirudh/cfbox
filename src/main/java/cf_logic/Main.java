@@ -12,6 +12,6 @@ public class Main implements RequestHandler<Request, Response> {
         if( Integer.parseInt(request.data.last_six_months_average) > 100000 && Integer.parseInt(request.data.applicant_pan) > 600) {
             proceed = true;
         }
-        return new Response(request.plan_id,request.product_id,proceed,request.data);
+        return new Response(request.plan_id,request.product_id,request.step_num,proceed,request.data);
     }
 }
