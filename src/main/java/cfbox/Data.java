@@ -1,6 +1,6 @@
-package example;
+package cfbox;
 
-public class Request {
+public class Data {
     String last_six_months_average;
     String applicant_pan;
 
@@ -20,11 +20,11 @@ public class Request {
         this.applicant_pan = applicant_pan;
     }
 
-    public Request(String last_six_months_average, String applicant_pan) {
+    public Data(String last_six_months_average, String applicant_pan) {
         this.last_six_months_average = last_six_months_average;
         this.applicant_pan = applicant_pan;
     }
 
-    public Request() {
+    public Data() {
     }
 }
