@@ -1,4 +1,4 @@
-package cfbox;
+package cf_logic;
 
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.amazonaws.services.lambda.runtime.Context;

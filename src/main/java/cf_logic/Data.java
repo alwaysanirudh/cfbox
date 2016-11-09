@@ -1,4 +1,4 @@
-package cfbox;
+package cf_logic;
 
 public class Data {
     String last_six_months_average;

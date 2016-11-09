@@ -1,4 +1,4 @@
-package cfbox;
+package cf_logic;
 
 public class Response {
     Integer plan_id;
