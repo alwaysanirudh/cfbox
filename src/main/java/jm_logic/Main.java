@@ -18,7 +18,7 @@ public class Main implements RequestHandler<Request, Response> {
         if( Integer.parseInt(request.data.last_six_months_average) > 150000 && Integer.parseInt(request.data.applicant_pan) > 600) {
             proceed = true;
         }
-        LogicData logic_data = new LogicData(request.plan_id,request.product_id,request.step_num,proceed,request.data);
+        LogicData logic_data = new LogicData(request.plan_id,request.product_id,request.step_num,proceed);
         Gson gson=new Gson();
         String post_data = gson.toJson(logic_data);
         

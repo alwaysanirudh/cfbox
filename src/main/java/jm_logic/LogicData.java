@@ -7,7 +7,7 @@ public class LogicData {
     Boolean proceed;
     Integer consumerId;
     Boolean claimed;
-    Data data;
+    ResponseData data;
 
     public Integer getPlan_id() {
         return plan_id;
@@ -55,21 +55,21 @@ public class LogicData {
         this.claimed = claimed;
     }
 
-    public Data getData() {
+    public ResponseData getData() {
         return data;
     }
 
-    public void setData(Data data) {
+    public void setData(ResponseData data) {
         this.data = data;
     }
-    public LogicData(Integer plan_id, String product_id, Integer step_num,Boolean proceed, Data data) {
+    public LogicData(Integer plan_id, String product_id, Integer step_num,Boolean proceed) {
         this.plan_id = plan_id;
         this.product_id = product_id;
         this.step_num = step_num;
         this.proceed = proceed;
         this.consumerId = 126;
         this.claimed = false;
-        this.data = data;
+        this.data = new ResponseData(proceed);
     }
 
     public LogicData() {
